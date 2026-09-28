@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Thank You Syam ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="particles" id="particles"></div>
+
+<div class="hearts" id="hearts"></div>
+
+
+<div class="thanks-page">
+
+    <div class="thanks-content">
+
+        <div class="heart">
+            ❤️
+        </div>
+
+        <p class="little-text">
+            ONE LAST THING
+        </p>
+
+        <h1>
+            Thank You,
+            <span>Syam</span>
+        </h1>
+
+        <div class="line"></div>
+
+        <p>
+            Thank you for being a part of our family
+            and for being a part of so many memories
+            that we will always carry with us.
+        </p>
+
+        <p>
+            Life gets busy.
+            Days pass quickly.
+            And sometimes we forget to say
+            the simplest things.
+        </p>
+
+        <p>
+            So today, we just wanted to remind you...
+        </p>
+
+        <div class="special-message">
+
+            <strong>
+                You are special to us.
+            </strong>
+
+            <strong>
+                You are appreciated.
+            </strong>
+
+            <strong>
+                And you will always have
+                a special place in our family.
+            </strong>
+
+        </div>
+
+        <p class="love-message">
+            With lots of love ❤️
+        </p>
+
+        <p class="family">
+            YOUR FAMILY
+        </p>
+
+        <a href="index.html" class="small-button">
+            ↩ Start Again
+        </a>
+
+    </div>
+
+</div>
+
+
+<script>
+
+const particles =
+document.getElementById("particles");
+
+for(let i = 0; i < 50; i++){
+
+    const particle =
+    document.createElement("div");
+
+    particle.className =
+    "particle";
+
+    particle.style.left =
+    Math.random() * 100 + "%";
+
+    particle.style.animationDuration =
+    5 + Math.random() * 8 + "s";
+
+    particle.style.animationDelay =
+    Math.random() * 5 + "s";
+
+    const size =
+    2 + Math.random() * 5;
+
+    particle.style.width =
+    size + "px";
+
+    particle.style.height =
+    size + "px";
+
+    particles.appendChild(particle);
+}
+
+
+/* Floating hearts */
+
+const hearts =
+document.getElementById("hearts");
+
+function createHeart(){
+
+    const heart =
+    document.createElement("div");
+
+    heart.className =
+    "floating-heart";
+
+    const heartTypes =
+    ["❤️","💗","💕","💖","✨"];
+
+    heart.innerHTML =
+    heartTypes[
+        Math.floor(
+            Math.random() *
+            heartTypes.length
+        )
+    ];
+
+    heart.style.left =
+    Math.random() * 100 + "vw";
+
+    heart.style.animationDuration =
+    5 + Math.random() * 5 + "s";
+
+    heart.style.fontSize =
+    15 + Math.random() * 20 + "px";
+
+    hearts.appendChild(heart);
+
+    setTimeout(() => {
+
+        heart.remove();
+
+    },10000);
+
+}
+
+setInterval(createHeart,800);
+
+</script>
+
+</body>
+</html>

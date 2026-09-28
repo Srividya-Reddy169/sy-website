@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>About Syam ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="particles" id="particles"></div>
+
+<div class="about-page">
+
+    <div class="about-card">
+
+        <div class="photo-section">
+
+            <div class="photo-glow"></div>
+
+            <img
+                src="a3.jpeg"
+                alt="Syam"
+                class="syam-photo"
+            >
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p class="little-text">
+                A LITTLE ABOUT YOU
+            </p>
+
+            <h1>
+                Syam
+                <span>❤️</span>
+            </h1>
+
+            <div class="line"></div>
+
+            <p>
+                Okay Syam… let's talk about you for a moment. 👀
+
+That hair? Effortlessly stylish.
+That calm little smile? A little dangerous. 😏
+And that sunset behind you? Honestly, it had no business trying to compete with you.
+
+You have that quiet kind of charm — the kind that doesn't need to ask for attention because somehow, it gets noticed anyway.
+And that expression… somewhere between “I'm innocent” and “I know exactly what I'm doing.” 😂❤️
+
+The simple outfit, the crossed arms, the sunset, that look… okay, we get it, Syam. You were clearly feeling yourself that day. 😌
+
+But behind all the teasing, there's something much more important: you're someone who has a special place in the hearts of the people around you.
+
+So yes, this page is basically an official announcement:
+
+You look good. You know it. We know it. Now stop pretending you don't. 😏❤️
+
+Ready for the next surprise? →</p>
+
+            <a href="thanks.html" class="main-button">
+                There's One More Thing
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+const particles = document.getElementById("particles");
+
+for(let i = 0; i < 45; i++){
+
+    const particle = document.createElement("div");
+
+    particle.className = "particle";
+
+    particle.style.left =
+        Math.random() * 100 + "%";
+
+    particle.style.animationDuration =
+        5 + Math.random() * 8 + "s";
+
+    particle.style.animationDelay =
+        Math.random() * 5 + "s";
+
+    const size =
+        2 + Math.random() * 5;
+
+    particle.style.width =
+        size + "px";
+
+    particle.style.height =
+        size + "px";
+
+    particles.appendChild(particle);
+}
+
+</script>
+
+</body>
+</html>
